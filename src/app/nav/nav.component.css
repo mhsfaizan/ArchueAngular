@@ -1,0 +1,41 @@
+.my-container{
+	justify-content: flex-end;
+}
+section#nav1 .my-container{
+	background-color: #333;
+	top: 0px;
+}
+section#nav2 .my-container{
+	background-color: #eee;
+}
+.my-container ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.my-container ul li{
+	display: inline-block;
+}
+ .my-container ul li a{
+	display: block;
+	padding: .7rem 1rem;
+	text-decoration: none;
+	color: #fff;
+	transition:all  .2s linear ;
+}
+section#nav2 .my-container ul li a{
+	color: #555;
+}
+ .my-container >ul li a:hover{
+	color: #fa8a11!important;
+	background-color: #fff;
+}
+.mytestclass{
+	border:5px solid #fff;
+}
+.fixednav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}

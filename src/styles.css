@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+	margin: 0;
+	min-height: 1000px;
+}
+.bg-yellow{
+	background: #fa8a11;
+}
+.text-yellow{
+	color: #fa8a11!important;
+}
+.my-container{
+	display: flex;
+	width: 100%;
+	padding: 0rem 2rem;
+	align-items: center;
+	box-sizing: border-box;
+}
+.text-white{
+	color: #fff;
+}
