@@ -2,6 +2,7 @@
 body{
 	margin: 0;
 	min-height: 1000px;
+	font-family: calibri;
 }
 .bg-yellow{
 	background: #fa8a11;
@@ -18,4 +19,8 @@ body{
 }
 .text-white{
 	color: #fff;
+}
+.margin{
+	width: 90%;
+	margin:0 auto; 
 }

@@ -1,0 +1,31 @@
+.container{
+	display: flex;
+	min-height: 300px;
+	justify-content: center;
+	align-items: center;
+}
+.login-container{
+	min-width: 300px;
+	border:1px solid #bdbdbd;
+	padding:1rem .5rem; 
+	border-radius: 5px;
+}
+.form-group{
+	width: 80%;
+	margin: 1rem 0rem;
+}
+.form-control{
+	border:1px solid #bdbdbd;
+	border-radius: 5px;
+	padding:5px; 
+	display: block;
+	min-width: 100%;
+}
+.btn{
+	background-color: transparent;
+	padding:.3rem .7rem;
+	border-radius: 5px; 
+}
+.btn-disable{
+	cursor: not-allowed;
+}

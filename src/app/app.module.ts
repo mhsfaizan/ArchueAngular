@@ -1,5 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AppRoutingModule } from './/app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule  } from '@angular/common/http';
+
+
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -7,8 +14,12 @@ import { NavComponent } from './nav/nav.component';
 import { NavDirDirective } from './directives/nav-dir.directive';
 import { MycarousalComponent } from './mycarousal/mycarousal.component';
 import { FooterComponent } from './footer/footer.component';
-import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { MycarousalDirective } from './directives/mycarousal.directive';
+import { LoginComponent } from './login/login.component';
+
+
+import { LoginService } from './login.service';
 
 @NgModule({
   declarations: [
@@ -18,13 +29,18 @@ import { HomeComponent } from './home/home.component';
     NavDirDirective,
     MycarousalComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    MycarousalDirective,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

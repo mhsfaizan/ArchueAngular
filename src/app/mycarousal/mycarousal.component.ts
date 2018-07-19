@@ -10,6 +10,7 @@ export class MycarousalComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	
   }
 
 }

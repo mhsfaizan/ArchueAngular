@@ -1,3 +1,5 @@
-#top-logo .my-container h1{
-	font-family: arial;
+@media(min-width: 768px){
+	.collapse-btn{
+		display: none;
+	}
 }
