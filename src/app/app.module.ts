@@ -19,7 +19,7 @@ import { MycarousalDirective } from './directives/mycarousal.directive';
 import { LoginComponent } from './login/login.component';
 
 
-import { LoginService } from './login.service';
+// import { LoginService } from './login.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,7 @@ import { LoginService } from './login.service';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [LoginService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient,HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
+import { Myresp } from './restype/myresp';
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +16,8 @@ export class LoginService {
   	}
   	return fd;
   }
-  login(data):Observable<Object>{
+  login(data):Observable<Myresp>{
   	var formData = this.convertFormData(data);
-  	return this.http.post<Object>("php/check.php",formData);
+  	return this.http.post<Myresp>("php/login.php",formData);
   }
 }
