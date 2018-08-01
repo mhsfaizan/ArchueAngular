@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MycarousalDirective } from './directives/mycarousal.directive';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 // import { LoginService } from './login.service';
@@ -32,6 +33,7 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     MycarousalDirective,
     LoginComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
